@@ -1,0 +1,21 @@
+name: 'Source2Image'
+description: 'Create image using source2image'
+author: 'Vadim Rutkovsky'
+inputs:
+  path:
+    description: 'Path to source code'
+    default: '.'
+    required: false
+  base:
+    description: 'source2image base image'
+    required: true
+  image:
+    description: 'resulting image'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
+    - ${{ inputs.base }}
+    - ${{ inputs.image }}
