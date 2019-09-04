@@ -1,6 +1,8 @@
 name: 'Source2Image'
 description: 'Create image using source2image'
 author: 'Vadim Rutkovsky'
+icon: package
+color: purple
 inputs:
   path:
     description: 'Path to source code'
