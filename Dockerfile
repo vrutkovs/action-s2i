@@ -11,7 +11,7 @@ LABEL "com.github.actions.color"="purple"
 
 RUN apk --no-cache add bash curl tar && \
     cd /tmp && \
-    curl -L https://github.com/openshift/source-to-image/releases/download/v1.1.14/source-to-image-v1.1.14-874754de-linux-amd64.tar.gz | tar xvz && \
+    curl -L https://github.com/openshift/source-to-image/releases/download/v1.2.0/source-to-image-v1.2.0-2a579ecd-linux-amd64.tar.gz | tar xvz && \
     cp /tmp/s2i /usr/bin/
 
 ADD entrypoint.sh /entrypoint.sh
